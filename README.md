@@ -33,26 +33,42 @@
 
 ## Directory Structure
 
-문제 풀이 코드는 프로그래밍 언어와 문제 제공 플랫폼을 기준으로 분류한다.
+코딩테스트 문제는 프로그래밍 언어와 알고리즘 유형을 기준으로 분류하며, 문제와 풀이 코드를 별도 디렉터리로 관리한다.
 
 ```text
 01-coding-test-preparation/
-├── README.md
-├── javascript/
-│   ├── programmers/
-│   └── baekjoon/
-├── python/
-│   ├── programmers/
-│   └── baekjoon/
-├── java/
-│   ├── programmers/
-│   └── baekjoon/
-└── rust/
-    ├── programmers/
-    └── baekjoon/
+└── javascript/
+    ├── array/
+    │   ├── answer/
+    │   │   ├── answer-01.ts
+    │   │   ├── answer-02.ts
+    │   │   └── ...
+    │   └── question/
+    │       ├── question-01.ts
+    │       ├── question-02.ts
+    │       └── ...
+    ├── stack/
+    │   ├── answer/
+    │   │   ├── answer-01.ts
+    │   │   └── ...
+    │   └── question/
+    │       ├── question-01.ts
+    │       └── ...
+    ├── ...
+    ├── README.md
+    └── tsconfig.json
 ```
 
-위 구조는 예시이며, 실제 사용하는 언어와 문제 제공 플랫폼에 따라 디렉터리를 추가한다.
+### Directory Convention
+
+- `javascript/`: JavaScript 및 TypeScript 코딩테스트
+- `array/`, `stack/`, `...`: 자료구조 및 알고리즘 유형별 문제 분류
+- `question/`: 문제 설명, 제약 조건, 테스트 케이스
+- `answer/`: 직접 작성한 문제 풀이 코드
+
+문제와 정답 파일은 동일한 번호로 연결하여 관리한다.
+
+예: `question-01.ts` ↔ `answer-01.ts`
 
 ## AI Usage
 
