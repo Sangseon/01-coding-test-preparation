@@ -1,5 +1,13 @@
 {
   "compilerOptions": {
+    // import 경로에 .ts 확장자를 명시할 수 있도록 허용
+    "allowImportingTsExtensions": true,
+
+    // TypeScript 컴파일 시 JavaScript 파일을 생성하지 않음 - 타입 검사만 수행
+    "noEmit": true,
+
+    // 모든 TypeScript 파일을 모듈(Module)로 취급
+    // import/export 구문이 없어도 전역 스크립트로 취급하지 않음
     "moduleDetection": "force"
   }
 }
